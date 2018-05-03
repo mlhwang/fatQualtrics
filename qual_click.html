@@ -1,0 +1,180 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+/* giving the table structure without actually using table tags as they are finicky*/
+
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+
+
+
+
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    
+}
+
+div.gallery p {
+    padding: 15px;
+    text-align: center;
+    line-height: 18px;
+    height: 35px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inlineTable {
+            display: inline-block;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="container">
+  <div class="table">
+    <div class="table-row">
+      <div class="table-cell">
+          <div id="clickable1-source">
+            <img src="http://placehold.it/350x300?text=2" width="300" height="200">
+          </div>  
+      </div>
+      <div class="table-cell">
+          <div id="clickable2-source">            
+            <img src="http://placehold.it/350x300?text=3" width="300" height="200">
+          </div>
+      </div>
+      <div class="table-cell">
+          <div id="clickable3-source">            
+            <img src="http://placehold.it/350x300?text=4" width="300" height="200">
+          </div>
+      </div>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="table">
+    <div class="table-row">
+      <div class="table-cell">
+          <div id="target"> 
+            <img src="http://placehold.it/350x300?text=1" width="300" height="200">
+          </div>
+      </div>
+      <div class="table-cell">
+           Text will go here for the Tweet-like reflection on the reason for choosing this particular meal photo.
+      </div>          
+    </div>
+ </div>
+</div>
+
+
+
+<script>
+$('#clickable1-source').click(function(e) {  
+  //use this to check if the click works
+  //alert(1);
+  $('#target').html($(this).html());
+});
+$('#clickable2-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable3-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable4-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable5-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable6-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable7-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable8-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+$('#clickable9-source').click(function(e) {  
+  $('#target').html($(this).html());
+});
+
+$('a').click(function() {
+    var p = $('a').prev('p')
+    var lineheight = parseInt(p.css('line-height'))
+    if (parseInt(p.css('height')) == lineheight*3) {
+       p.css('height','auto');
+       $(this).text('Less')
+    } else {
+       p.css('height',lineheight*3+'px');
+       $(this).text('More')
+    }
+});
+</script>
+
+
+
+
+</body>        
+           
+           
+           
