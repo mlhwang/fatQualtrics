@@ -11,3 +11,5 @@ http://jsfiddle.net/SM769/
 My own JS Fiffle testbed:
 https://jsfiddle.net/ngvLdwyg/4/
 
+CSS: responsive table without using the table tag
+https://wisdmlabs.com/blog/responsive-tables-using-css-div-tag/
